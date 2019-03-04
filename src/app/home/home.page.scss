@@ -1,0 +1,37 @@
+ion-toolbar {
+    --background: #8968CD;
+    color: rgb(228, 214, 255);
+}
+
+ion-content {
+    --background: #5D478B;
+    
+    ion-item {
+        --background: #5D478B;
+
+        ion-label {
+            color: rgb(228, 214, 255);
+        }
+    }
+
+    ion-button {
+        margin: 15px;
+        --background: #8968CD;
+        --color: rgb(228, 214, 255);
+    }
+
+    ion-note {
+        --color: rgb(228, 214, 255);
+        display: inline-block;
+        text-align: center;
+    }
+
+    .button-end {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+
+
+}

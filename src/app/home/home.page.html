@@ -1,0 +1,46 @@
+<ion-toolbar>
+  <ion-title align="center">Gasolina ou Alcool?</ion-title>
+</ion-toolbar>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Preço da Gasolina</ion-label>
+    <ion-input type="number" mode="md" color="light" [(ngModel)]="gas"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Preço do Alcool</ion-label>
+    <ion-input type="number" mode="md" color="light" [(ngModel)]="alc"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="Calc()">calcular</ion-button>
+
+  <div>
+    <ion-note>Se o preço do etanol em relação ao preço da gasolina estiver com média menor
+    que 73%, favorece o uso do alcool. Se for 74% ou mais, favorece uso da gasolina.</ion-note>
+  </div>
+
+  <br>
+
+  <ion-item>
+    <ion-label>A média é (%):</ion-label>
+    <ion-input type="text" disabled placeholder="Resultado" 
+    [(ngModel)]="resultadoMedia" value="{{resultadoMedia}}"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Maior economia com:</ion-label>
+
+    <ion-input type="text" disabled placeholder="Resultado" 
+    [(ngModel)]="resultadoSe" value="{{resultadoSe}}"></ion-input> 
+  </ion-item>
+  
+  <br>
+  <br>
+  <br>
+
+  <ion-button class="button-end" align="center">Postos mais próximos <br> (Em Breve)</ion-button>
+
+</ion-content>
